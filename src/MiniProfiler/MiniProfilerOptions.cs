@@ -4,11 +4,12 @@ using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
 using System.Web;
-using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.Internal;
-using StackExchange.Profiling.Storage;
+using Allied.Core.Profiling.Helpers;
+using Allied.Core.Profiling.Internal;
+using Allied.Core.Profiling.ProfileProviders;
+using Allied.Core.Profiling.Storage;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Contains the settings specific to web applications (not in MiniProfiler.Standard)

@@ -1,9 +1,10 @@
-﻿using BenchmarkDotNet.Attributes;
+﻿using Allied.Core.Profiling;
+using Allied.Core.Profiling.Internal;
+using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Attributes.Jobs;
-using StackExchange.Profiling;
-using StackExchange.Profiling.Internal;
 
-namespace Benchmarks
+
+namespace Benchmarks.Benchmarks
 {
     [ClrJob, CoreJob]
     [Config(typeof(Configs.Memory))]

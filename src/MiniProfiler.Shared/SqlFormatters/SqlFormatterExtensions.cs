@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.SqlFormatters
+namespace Allied.Core.Profiling.SqlFormatters
 {
     /// <summary>
     /// Extensions for ISqlFormatter instances

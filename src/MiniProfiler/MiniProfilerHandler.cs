@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Routing;
-using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Helpers;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Understands how to route and respond to MiniProfiler UI URLS.

@@ -1,4 +1,4 @@
-﻿namespace StackExchange.Profiling
+﻿namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Dictates on which side of the page the profiler popup button is displayed; defaults to top left.

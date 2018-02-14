@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Class used to initialize MiniProfiler diagnostic listeners.

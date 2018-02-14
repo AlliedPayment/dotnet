@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Extensions.DependencyInjection
+﻿namespace Allied.Core.Profiling
 {
     /// <summary>
     /// An interface for configuring MiniProfiler services.
@@ -8,6 +8,6 @@
         /// <summary>
         /// Gets the <see cref="IServiceCollection"/> where MiniProfiler services are configured.
         /// </summary>
-        IServiceCollection Services { get; }
+     //   IServiceCollection Services { get; }
     }
 }

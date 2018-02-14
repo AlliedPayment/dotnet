@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// A custom timing that usually represents a Remote Procedure Call, allowing better

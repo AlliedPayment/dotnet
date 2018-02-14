@@ -1,4 +1,4 @@
-﻿namespace StackExchange.Profiling.Data
+﻿namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// Categories of SQL statements.

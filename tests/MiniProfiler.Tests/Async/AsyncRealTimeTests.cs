@@ -2,7 +2,11 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Internal;
+using Allied.Core.Profiling.ProfileProviders;
 using StackExchange.Profiling.Internal;
+using StackExchange.Profiling.Tests.Helpers;
 using Xunit;
 using Xunit.Abstractions;
 

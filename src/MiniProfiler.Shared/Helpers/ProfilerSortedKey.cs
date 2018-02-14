@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StackExchange.Profiling.Helpers
+namespace Allied.Core.Profiling.Helpers
 {
     /// <summary>
     /// Identifies a MiniProfiler result and only contains the needed info for sorting a list of profiling sessions.

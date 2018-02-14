@@ -1,5 +1,5 @@
-﻿using BenchmarkDotNet.Attributes;
-using StackExchange.Profiling.Internal;
+﻿using Allied.Core.Profiling.Internal;
+using BenchmarkDotNet.Attributes;
 
 namespace Benchmarks.Benchmarks
 {

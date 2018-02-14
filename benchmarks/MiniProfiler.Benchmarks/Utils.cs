@@ -1,5 +1,6 @@
-﻿using StackExchange.Profiling;
-using StackExchange.Profiling.Internal;
+﻿using Allied.Core.Profiling;
+using Allied.Core.Profiling.Internal;
+
 
 namespace Benchmarks
 {

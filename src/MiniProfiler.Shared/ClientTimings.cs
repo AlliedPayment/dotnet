@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Times collected from the client

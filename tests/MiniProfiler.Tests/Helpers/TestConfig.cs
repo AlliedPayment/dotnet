@@ -1,7 +1,7 @@
-﻿using Jil;
-using System;
+﻿using System;
+using Jil;
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     public static class TestConfig
     {

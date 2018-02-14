@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
 #pragma warning disable RCS1158 // Avoid static members in generic types.
     /// <summary>

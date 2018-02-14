@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Data.Common;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// Provides a wrapper around a native <c>DbDataAdapter</c>, allowing a profiled Fill operation.

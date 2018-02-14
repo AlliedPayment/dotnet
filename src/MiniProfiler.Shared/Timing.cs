@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// An individual profiling step that can contain child steps.
@@ -256,7 +256,7 @@ namespace StackExchange.Profiling
         /// </summary>
         /// <param name="timing">The child <see cref="Timing"/> to add.</param>
         /// <remarks>
-        /// Used outside this assembly for custom deserialization when creating an <see cref="Storage.IAsyncStorage"/> implementation.
+        /// Used outside this assembly for custom deserialization when creating an <see cref="StackExchange.Profiling.Storage.IAsyncStorage"/> implementation.
         /// </remarks>
         public void AddChild(Timing timing)
         {

@@ -1,7 +1,7 @@
 ﻿using System;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     public partial class MiniProfiler
     {

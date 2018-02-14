@@ -1,7 +1,7 @@
-﻿using StackExchange.Profiling.Internal;
-using System.Web;
+﻿using System.Web;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.Helpers
+namespace Allied.Core.Profiling.Helpers
 {
     /// <summary>
     /// Identifies users based on IP Address.

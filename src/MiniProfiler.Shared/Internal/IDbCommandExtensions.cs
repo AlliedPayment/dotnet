@@ -1,10 +1,10 @@
-﻿using StackExchange.Profiling.SqlFormatters;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Text.RegularExpressions;
+using Allied.Core.Profiling.SqlFormatters;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Internal MiniProfiler extensions, not meant for consumption.

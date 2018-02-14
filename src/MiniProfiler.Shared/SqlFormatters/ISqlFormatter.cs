@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace StackExchange.Profiling.SqlFormatters
+namespace Allied.Core.Profiling.SqlFormatters
 {
     /// <summary>
     /// Takes a <c>SqlTiming</c> and returns a formatted SQL string, for parameter replacement, etc.

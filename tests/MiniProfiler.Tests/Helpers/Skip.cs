@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     public static class Skip
     {

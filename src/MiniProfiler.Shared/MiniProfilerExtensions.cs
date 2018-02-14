@@ -1,10 +1,10 @@
-﻿using StackExchange.Profiling.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Contains helper methods that ease working with null <see cref="MiniProfiler"/>s.
@@ -56,8 +56,8 @@ namespace StackExchange.Profiling
         }
 
         /// <summary>
-        /// Returns a new <see cref="CustomTiming"/> that will automatically set its <see cref="Profiling.CustomTiming.StartMilliseconds"/>
-        /// and <see cref="Profiling.CustomTiming.DurationMilliseconds"/>
+        /// Returns a new <see cref="CustomTiming"/> that will automatically set its <see cref="StackExchange.Profiling.CustomTiming.StartMilliseconds"/>
+        /// and <see cref="StackExchange.Profiling.CustomTiming.DurationMilliseconds"/>
         /// </summary>
         /// <param name="profiler">The current profiling session or null.</param>
         /// <param name="category">The category under which this timing will be recorded.</param>
@@ -72,8 +72,8 @@ namespace StackExchange.Profiling
         }
 
         /// <summary>
-        /// Returns a new <see cref="CustomTiming"/> that will automatically set its <see cref="Profiling.CustomTiming.StartMilliseconds"/>
-        /// and <see cref="Profiling.CustomTiming.DurationMilliseconds"/>. Will only save the new <see cref="Timing"/> if the total elapsed time
+        /// Returns a new <see cref="CustomTiming"/> that will automatically set its <see cref="StackExchange.Profiling.CustomTiming.StartMilliseconds"/>
+        /// and <see cref="StackExchange.Profiling.CustomTiming.DurationMilliseconds"/>. Will only save the new <see cref="Timing"/> if the total elapsed time
         /// takes more than <paramef name="minSaveMs" />.
         /// </summary>
         /// <param name="profiler">The current profiling session or null.</param>

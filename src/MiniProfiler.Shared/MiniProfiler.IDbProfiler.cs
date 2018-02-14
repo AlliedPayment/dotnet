@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using StackExchange.Profiling.Data;
-using StackExchange.Profiling.Internal;
-using System.Collections.Generic;
+using Allied.Core.Profiling.Data;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     public partial class MiniProfiler : IDbProfiler
     {

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using StackExchange.Profiling.Internal;
 
-namespace StackExchange.Profiling.Storage
+namespace Allied.Core.Profiling.Storage
 {
     /// <summary>
     /// Empty storage no-nothing provider for doing nothing at all. Super efficient.
@@ -44,7 +43,7 @@ namespace StackExchange.Profiling.Storage
         /// Saves nothing.
         /// </summary>
         /// <param name="profiler">No one cares.</param>
-        public Task SaveAsync(MiniProfiler profiler) => Task.CompletedTask;
+        public Task SaveAsync(MiniProfiler profiler) => new Task(() => { });
         /// <summary>
         /// Returns null.
         /// </summary>
@@ -66,7 +65,7 @@ namespace StackExchange.Profiling.Storage
         /// </summary>
         /// <param name="user">No one cares.</param>
         /// <param name="id">No one cares.</param>
-        public Task SetUnviewedAsync(string user, Guid id) => Task.CompletedTask;
+        public Task SetUnviewedAsync(string user, Guid id) => new Task(() => { });
         /// <summary>
         /// Sets nothing.
         /// </summary>
@@ -78,7 +77,7 @@ namespace StackExchange.Profiling.Storage
         /// </summary>
         /// <param name="user">No one cares.</param>
         /// <param name="id">No one cares.</param>
-        public Task SetViewedAsync(string user, Guid id) => Task.CompletedTask;
+        public Task SetViewedAsync(string user, Guid id) => new Task(() => { });
         /// <summary>
         /// Gets nothing.
         /// </summary>

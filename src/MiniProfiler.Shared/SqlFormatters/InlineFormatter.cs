@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.SqlFormatters
+namespace Allied.Core.Profiling.SqlFormatters
 {
     /// <summary>
     /// Formats any SQL query with inline parameters, optionally including the value type

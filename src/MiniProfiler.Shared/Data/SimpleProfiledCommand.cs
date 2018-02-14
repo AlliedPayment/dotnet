@@ -2,7 +2,7 @@
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// A general implementation of <see cref="IDbCommand"/> that uses an <see cref="IDbProfiler"/>

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.Common;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// The profiled database transaction.

@@ -4,7 +4,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StackExchange.Profiling.Storage
+namespace Allied.Core.Profiling.Storage
 {
     /// <summary>
     /// Understands how to save MiniProfiler results to a MSSQL database, allowing more permanent storage and querying of slow results.

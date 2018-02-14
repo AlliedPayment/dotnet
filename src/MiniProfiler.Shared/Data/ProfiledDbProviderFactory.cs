@@ -1,11 +1,12 @@
 ﻿using System.Data.Common;
 using System.Diagnostics.CodeAnalysis;
-#if !NETSTANDARD1_5
 using System.Security;
-using System.Security.Permissions;
+
+#if !NETSTANDARD1_5
+
 #endif
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// Wrapper for a database provider factory to enable profiling
@@ -122,7 +123,7 @@ namespace StackExchange.Profiling.Data
         /// <summary>Returns a new instance of the provider's class that implements the provider's version of the <see cref="CodeAccessPermission"/> class.</summary>
         /// <param name="state">One of the <see cref="PermissionState"/> values.</param>
         /// <returns>A <see cref="CodeAccessPermission"/> object for the specified <see cref="PermissionState"/>.</returns>
-        public override CodeAccessPermission CreatePermission(PermissionState state) => _factory.CreatePermission(state);
+   //     public override CodeAccessPermission CreatePermission(PermissionState state) => _factory.CreatePermission(state);
 #endif
 #endif
     }

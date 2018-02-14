@@ -1,4 +1,5 @@
-﻿using StackExchange.Profiling.Internal;
+﻿using Allied.Core.Profiling.Internal;
+using StackExchange.Profiling.Internal;
 
 namespace StackExchange.Profiling.Tests.Helpers
 {

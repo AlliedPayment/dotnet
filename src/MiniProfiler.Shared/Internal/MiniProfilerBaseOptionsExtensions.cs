@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Internal extension methods for <see cref="MiniProfilerBaseOptions"/> and inheritors.

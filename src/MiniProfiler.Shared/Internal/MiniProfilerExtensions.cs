@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Internal MiniProfiler extensions, not meant for consumption.

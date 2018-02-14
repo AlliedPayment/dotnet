@@ -1,7 +1,8 @@
-﻿using StackExchange.Profiling.Helpers;
-using System;
+﻿using System;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Helpers;
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     /// <summary>
     /// The unit test stopwatch.

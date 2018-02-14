@@ -1,8 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Attributes.Jobs;
-using StackExchange.Profiling;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using Allied.Core.Profiling;
 
 namespace Benchmarks.Benchmarks
 {

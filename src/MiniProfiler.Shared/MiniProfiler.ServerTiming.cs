@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     public partial class MiniProfiler
     {

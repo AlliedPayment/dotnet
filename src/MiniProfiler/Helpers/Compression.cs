@@ -2,7 +2,7 @@
 using System.IO.Compression;
 using System.Web;
 
-namespace StackExchange.Profiling.Helpers
+namespace Allied.Core.Profiling.Helpers
 {
     internal static class Compression
 	{

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Internal MiniProfiler interface for registering DiagnosticListeners, not meant for consumption.

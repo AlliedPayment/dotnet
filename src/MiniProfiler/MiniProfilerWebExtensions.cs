@@ -1,12 +1,10 @@
-﻿using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Web;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Contains helper methods that ease working with null <see cref="MiniProfiler"/>s.

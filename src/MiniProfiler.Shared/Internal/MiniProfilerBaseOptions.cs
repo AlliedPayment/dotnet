@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using StackExchange.Profiling.Data;
-using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.SqlFormatters;
-using StackExchange.Profiling.Storage;
+using Allied.Core.Profiling.Data;
+using Allied.Core.Profiling.Helpers;
+using Allied.Core.Profiling.ProfileProviders;
+using Allied.Core.Profiling.SqlFormatters;
+using Allied.Core.Profiling.Storage;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Various configuration properties for MiniProfiler.

@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Routing;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling.ProfileProviders
 {
     /// <summary>
     /// For ASP.NET NON-Core applications, the MiniPofiler v3 and below style, using <see cref="HttpContext.Items"/> for storage.

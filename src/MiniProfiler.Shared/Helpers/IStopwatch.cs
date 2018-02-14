@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace StackExchange.Profiling.Helpers
+﻿namespace Allied.Core.Profiling.Helpers
 {
     /// <summary>
     /// The Stopwatch interface.

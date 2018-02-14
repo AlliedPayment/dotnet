@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using StackExchange.Profiling.Storage.Internal;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Storage;
+using StackExchange.Profiling.Internal;
 using StackExchange.Redis;
 
-namespace StackExchange.Profiling.Storage
+namespace StackExchange.Profiling
 {
     /// <summary>
     /// StackExchange.Redis based storage provider for <see cref="MiniProfiler"/> results.

@@ -1,10 +1,11 @@
 ﻿using Dapper;
-using StackExchange.Profiling;
 using System;
 using System.Data.Common;
 using System.Diagnostics;
 using System.Net;
 using System.Threading;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Data;
 using static System.Console;
 
 namespace Samples.Console
@@ -99,7 +100,7 @@ namespace Samples.Console
             // when MiniProfiler.Current is null, this connection will not record any database timings
             if (MiniProfiler.Current != null)
             {
-                cnn = new StackExchange.Profiling.Data.ProfiledDbConnection(cnn, MiniProfiler.Current);
+                cnn = new ProfiledDbConnection(cnn, MiniProfiler.Current);
             }
 
             cnn.Open();

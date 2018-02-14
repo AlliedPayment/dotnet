@@ -1,9 +1,8 @@
-using StackExchange.Profiling.Internal;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Text;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.SqlFormatters
+namespace Allied.Core.Profiling.SqlFormatters
 {
     /// <summary>
     /// Formats SQL server queries with a DECLARE up top for parameter values
@@ -43,11 +42,11 @@ namespace StackExchange.Profiling.SqlFormatters
                 {
                     buffer.Append("-- Command Transaction Iso Level: ").AppendLine(command.Transaction.IsolationLevel.ToString());
                 }
-				if (System.Transactions.Transaction.Current != null)
-				{
-                    // transactions issued by TransactionScope are not bound to the database command but exists globally
-                    buffer.Append("-- Transaction Scope Iso Level: ").AppendLine(System.Transactions.Transaction.Current.IsolationLevel.ToString());
-				}
+				//if (System.Transactions.Transaction.Current != null)
+				//{
+    //                // transactions issued by TransactionScope are not bound to the database command but exists globally
+    //                buffer.Append("-- Transaction Scope Iso Level: ").AppendLine(System.Transactions.Transaction.Current.IsolationLevel.ToString());
+				//}
 #endif
                 buffer.AppendLine();
             }

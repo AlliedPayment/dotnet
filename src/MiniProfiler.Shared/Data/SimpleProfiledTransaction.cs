@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// A general implementation of <see cref="IDbTransaction"/> that is used to

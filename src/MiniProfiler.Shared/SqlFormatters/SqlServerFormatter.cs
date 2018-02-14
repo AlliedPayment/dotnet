@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace StackExchange.Profiling.SqlFormatters
+namespace Allied.Core.Profiling.SqlFormatters
 {
     /// <summary>
     /// Formats SQL server queries with a DECLARE up top for parameter values

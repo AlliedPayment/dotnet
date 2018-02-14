@@ -2,7 +2,7 @@
 using System.Text;
 using System.Threading;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Provides optimized access to StringBuilder instances

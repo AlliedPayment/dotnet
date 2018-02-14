@@ -1,6 +1,6 @@
 ﻿using System;
-using StackExchange.Profiling.Storage;
-using StackExchange.Profiling.Storage.Internal;
+using StackExchange.Profiling.Internal;
+using StackExchange.Profiling.Tests.Helpers;
 using StackExchange.Redis;
 using Xunit;
 using Xunit.Abstractions;
@@ -13,7 +13,7 @@ namespace StackExchange.Profiling.Tests.Storage
         {
         }
 
-        [Fact]
+        [Xunit.Fact]
         public void Serialization()
         {
             var mp = GetMiniProfiler();
@@ -25,14 +25,14 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Equal(mp, deserialized);
         }
 
-        [Fact]
+        [Xunit.Fact]
         public void ConnectionString()
         {
             var storage = new RedisStorage(TestConfig.Current.RedisConnectionString);
             storage.GetUnviewedIds("");
         }
 
-        [Fact]
+        [Xunit.Fact]
         public void ConnectionOptions()
         {
             var configOptions = ConfigurationOptions.Parse(TestConfig.Current.RedisConnectionString);
@@ -40,7 +40,7 @@ namespace StackExchange.Profiling.Tests.Storage
             storage.GetUnviewedIds("");
         }
 
-        [Fact]
+        [Xunit.Fact]
         public void Multiplexer()
         {
             var multiplexer = ConnectionMultiplexer.Connect(TestConfig.Current.RedisConnectionString);
@@ -48,7 +48,7 @@ namespace StackExchange.Profiling.Tests.Storage
             storage.GetUnviewedIds("");
         }
 
-        [Fact]
+        [Xunit.Fact]
         public void IDatabase()
         {
             var multiplexer = ConnectionMultiplexer.Connect(TestConfig.Current.RedisConnectionString);

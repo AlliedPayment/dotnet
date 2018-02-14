@@ -5,17 +5,17 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using StackExchange.Profiling.Internal;
-using StackExchange.Profiling.Tests.Helpers;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Internal;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     public abstract class BaseTest
     {
         /// <summary>
-        /// Amount of time each <see cref="MiniProfilerExtensions.Step"/> will take for unit tests.
+        /// Amount of time each <see cref="Allied.Core.Profiling.Internal.MiniProfilerExtensions.Step"/> will take for unit tests.
         /// </summary>
         public const int StepTimeMilliseconds = 1;
 

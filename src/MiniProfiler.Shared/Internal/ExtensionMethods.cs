@@ -1,10 +1,10 @@
-﻿using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Common extension methods to use only in this project

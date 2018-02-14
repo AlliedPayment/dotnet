@@ -1,9 +1,10 @@
 ﻿using System.IO;
-#if NETCOREAPP1_1 || NETCOREAPP2_0
 using System.Reflection;
+#if NETCOREAPP1_1 || NETCOREAPP2_0
+
 #endif
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     public static class Resource
     {

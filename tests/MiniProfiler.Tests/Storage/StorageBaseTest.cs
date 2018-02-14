@@ -2,8 +2,9 @@
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Dapper;
-using StackExchange.Profiling.Storage;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.Storage;
+using StackExchange.Profiling.Tests.Helpers;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -23,7 +24,7 @@ namespace StackExchange.Profiling.Tests.Storage
             }
         }
 
-        [Fact]
+        [Helpers.Fact]
         public void GetUnviewedIds()
         {
             var mp1 = GetMiniProfiler("Test1");
@@ -40,7 +41,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Contains(mp3.Id, unviewed);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task GetUnviewedIdsAsync()
         {
             var mp1 = GetMiniProfiler("Test1");
@@ -57,7 +58,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Contains(mp3.Id, unviewed);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public void List()
         {
             var mp1 = GetMiniProfiler("Test1");
@@ -74,7 +75,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Contains(mp3.Id, stored);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task ListAsync()
         {
             var mp1 = GetMiniProfiler("Test1");
@@ -91,7 +92,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Contains(mp3.Id, stored);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public void SaveAndLoad()
         {
             var mp = GetMiniProfiler();
@@ -102,7 +103,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.NotNull(fetched.Options);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task SaveAndLoadAsync()
         {
             var mp = GetMiniProfiler();
@@ -113,7 +114,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.NotNull(fetched.Options);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public void SetViewed()
         {
             var mp = GetMiniProfiler();
@@ -128,7 +129,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.DoesNotContain(mp.Id, unviewedIds2);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task SetViewedAsync()
         {
             var mp = GetMiniProfiler();
@@ -143,7 +144,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.DoesNotContain(mp.Id, unviewedIds2);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public void SetUnviewed()
         {
             var mp = GetMiniProfiler();
@@ -161,7 +162,7 @@ namespace StackExchange.Profiling.Tests.Storage
             Assert.Contains(mp.Id, unviewedIds3);
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task SetUnviewedAsync()
         {
             var mp = GetMiniProfiler();
@@ -203,36 +204,36 @@ namespace StackExchange.Profiling.Tests.Storage
         /// Creates the tables for this storage provider to use.
         /// </summary>
         /// <param name="storage">The storage to create schema for.</param>
-        public static void CreateSchema(this IAsyncStorage storage)
-        {
-            if (storage is DatabaseStorageBase dbs && storage is IDatabaseStorageConnectable dbsc)
-            {
-                using (var conn = dbsc.GetConnection())
-                {
-                    foreach (var script in dbs.TableCreationScripts)
-                    {
-                        conn.Execute(script);
-                    }
-                }
-            }
-        }
+        //public static void CreateSchema(this IAsyncStorage storage)
+        //{
+        //    if (storage is DatabaseStorageBase dbs && storage is IDatabaseStorageConnectable dbsc)
+        //    {
+        //        using (var conn = dbsc.GetConnection())
+        //        {
+        //            foreach (var script in dbs.TableCreationScripts)
+        //            {
+        //                conn.Execute(script);
+        //            }
+        //        }
+        //    }
+        //}
 
         /// <summary>
         /// Drops the tables for this storage provider.
         /// </summary>
         /// <param name="storage">The storage to drop schema for.</param>
-        public static void DropSchema(this IAsyncStorage storage)
-        {
-            if (storage is DatabaseStorageBase dbs && storage is IDatabaseStorageConnectable dbsc)
-            {
-                using (var conn = dbsc.GetConnection())
-                {
-                    conn.Execute("Drop Table " + dbs.MiniProfilerClientTimingsTable);
-                    conn.Execute("Drop Table " + dbs.MiniProfilerTimingsTable);
-                    conn.Execute("Drop Table " + dbs.MiniProfilersTable);
-                }
-            }
-        }
+        //public static void DropSchema(this IAsyncStorage storage)
+        //{
+        //    if (storage is DatabaseStorageBase dbs && storage is IDatabaseStorageConnectable dbsc)
+        //    {
+        //        using (var conn = dbsc.GetConnection())
+        //        {
+        //            conn.Execute("Drop Table " + dbs.MiniProfilerClientTimingsTable);
+        //            conn.Execute("Drop Table " + dbs.MiniProfilerTimingsTable);
+        //            conn.Execute("Drop Table " + dbs.MiniProfilersTable);
+        //        }
+        //    }
+        //}
     }
 
     public abstract class StorageFixtureBase

@@ -3,7 +3,7 @@
 using System;
 using System.Data.Common;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     public partial class ProfiledDbCommand : ICloneable
     {

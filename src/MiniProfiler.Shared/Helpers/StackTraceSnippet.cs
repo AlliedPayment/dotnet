@@ -1,8 +1,8 @@
-﻿using StackExchange.Profiling.Internal;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling.Helpers
+namespace Allied.Core.Profiling.Helpers
 {
     /// <summary>
     /// Gets part of a stack trace containing only methods we care about.

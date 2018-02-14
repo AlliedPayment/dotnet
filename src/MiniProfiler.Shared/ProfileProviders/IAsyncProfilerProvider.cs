@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using StackExchange.Profiling.Internal;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling.ProfileProviders
 {
     /// <summary>
     /// A provider used to create <see cref="MiniProfiler"/> instances and maintain the current instance.

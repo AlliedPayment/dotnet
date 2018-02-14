@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics;
+using Allied.Core.Profiling.Data;
 
-using StackExchange.Profiling.Data;
-
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     /// <summary>
     /// The counting profiler.

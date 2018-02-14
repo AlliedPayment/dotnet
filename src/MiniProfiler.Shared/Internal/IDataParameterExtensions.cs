@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Data;
+
 #if NETSTANDARD1_5
 using System.Reflection;
 #endif
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// Internal MiniProfiler extensions, not meant for consumption.

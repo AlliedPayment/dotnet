@@ -1,7 +1,7 @@
-﻿using StackExchange.Profiling.Internal;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling.ProfileProviders
 {
     /// <summary>
     /// Mostly for unit testing and single-threaded applications, only allows one 
@@ -51,7 +51,7 @@ namespace StackExchange.Profiling
         public Task StoppedAsync(MiniProfiler profiler, bool discardResults)
         {
             Stopped(profiler, discardResults);
-            return Task.CompletedTask;
+            return new Task(() => { });
         }
     }
 }

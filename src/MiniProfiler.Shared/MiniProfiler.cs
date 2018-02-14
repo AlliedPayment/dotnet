@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Threading;
 using System.Threading.Tasks;
-using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.Internal;
-using StackExchange.Profiling.Storage;
+using Allied.Core.Profiling.Helpers;
+using Allied.Core.Profiling.Internal;
+using Allied.Core.Profiling.Storage;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// A single MiniProfiler can be used to represent any number of steps/levels in a call-graph, via Step()
@@ -166,9 +165,7 @@ namespace StackExchange.Profiling
         [DataMember(Order = 10)]
         public bool HasUserViewed { get; set; }
 
-        // Allows async to properly track the attachment point
-        private readonly AsyncLocal<Timing> _head = new AsyncLocal<Timing>();
-
+        
         // When async context flows aren't preserved, fallback to enable correct profiling in most cases
         private Timing _lastSetHead;
 
@@ -177,8 +174,8 @@ namespace StackExchange.Profiling
         /// </summary>
         public Timing Head
         {
-            get => _head.Value ?? _lastSetHead;
-            set => _head.Value = _lastSetHead = value;
+            get =>  _lastSetHead;
+            set => _lastSetHead = value;
         }
 
         /// <summary>

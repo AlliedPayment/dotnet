@@ -1,8 +1,7 @@
-﻿using StackExchange.Profiling.Internal;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling.ProfileProviders
 {
     /// <summary>
     /// Default profile provider, gracefully handles async transitions.
@@ -11,14 +10,14 @@ namespace StackExchange.Profiling
     /// </summary>
     public class DefaultProfilerProvider : IAsyncProfilerProvider
     {
-        private static readonly AsyncLocal<MiniProfiler> _profiler = new AsyncLocal<MiniProfiler>();
+        private static MiniProfiler _profiler = new MiniProfiler();
         /// <summary>
         /// The current profiler instance, statically resolved and backed by AsyncLocal{T}.
         /// </summary>
         public virtual MiniProfiler CurrentProfiler
         {
-            get => _profiler.Value;
-            protected set => _profiler.Value = value;
+            get => _profiler;
+            protected set => _profiler = value;
         }
 
         /// <summary>
@@ -72,7 +71,7 @@ namespace StackExchange.Profiling
         }
 
         /// <summary>
-        /// Calls <see cref="Storage.IAsyncStorage.Save(MiniProfiler)"/> to save the current
+        /// Calls <see cref="StackExchange.Profiling.Storage.IAsyncStorage.Save(MiniProfiler)"/> to save the current
         /// profiler using the current storage settings. 
         /// If <see cref="MiniProfiler.Storage"/> is set, this will be used.
         /// </summary>
@@ -90,7 +89,7 @@ namespace StackExchange.Profiling
         }
 
         /// <summary>
-        /// Asynchronously calls <see cref="Storage.IAsyncStorage.SaveAsync(MiniProfiler)"/> to save the current
+        /// Asynchronously calls <see cref="StackExchange.Profiling.Storage.IAsyncStorage.SaveAsync(MiniProfiler)"/> to save the current
         /// profiler using the current storage settings. 
         /// If <see cref="MiniProfiler.Storage"/> is set, this will be used.
         /// </summary>

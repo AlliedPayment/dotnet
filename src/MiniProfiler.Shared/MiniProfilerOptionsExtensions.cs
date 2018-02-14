@@ -1,7 +1,6 @@
-﻿using System;
-using StackExchange.Profiling.Internal;
+﻿using Allied.Core.Profiling.Internal;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Handy extensions for <see cref="MiniProfilerBaseOptions"/>.

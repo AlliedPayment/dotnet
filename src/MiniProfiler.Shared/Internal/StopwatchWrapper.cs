@@ -1,7 +1,7 @@
-﻿using StackExchange.Profiling.Helpers;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using Allied.Core.Profiling.Helpers;
 
-namespace StackExchange.Profiling.Internal
+namespace Allied.Core.Profiling.Internal
 {
     /// <summary>
     /// The stopwatch wrapper MiniProfile uses, for internal usage.

@@ -1,8 +1,8 @@
-﻿using BenchmarkDotNet.Attributes;
+﻿using Allied.Core.Profiling.Helpers;
+using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Attributes.Jobs;
-using StackExchange.Profiling.Helpers;
 
-namespace Benchmarks
+namespace Benchmarks.Benchmarks
 {
     [ClrJob, CoreJob]
     [Config(typeof(Configs.Full))]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace StackExchange.Profiling.Storage
+namespace Allied.Core.Profiling.Storage
 {
     /// <summary>
     /// How lists should be sorted.

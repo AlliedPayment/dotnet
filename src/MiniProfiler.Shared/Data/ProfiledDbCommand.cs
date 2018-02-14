@@ -6,7 +6,7 @@ using System.Reflection.Emit;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// The profiled database command.

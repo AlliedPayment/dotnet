@@ -4,7 +4,7 @@ using System.Data.Common;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace StackExchange.Profiling.Data
+namespace Allied.Core.Profiling.Data
 {
     /// <summary>
     /// Wraps a database connection, allowing SQL execution timings to be collected when a <see cref="MiniProfiler"/> session is started.
@@ -179,7 +179,7 @@ namespace StackExchange.Profiling.Data
         /// Enlist the transaction.
         /// </summary>
         /// <param name="transaction">The transaction.</param>
-        public override void EnlistTransaction(System.Transactions.Transaction transaction) =>_connection.EnlistTransaction(transaction);
+      //  public override void EnlistTransaction(System.Transactions.Transaction transaction) =>_connection.EnlistTransaction(transaction);
 
         /// <summary>
         /// Gets the database schema.

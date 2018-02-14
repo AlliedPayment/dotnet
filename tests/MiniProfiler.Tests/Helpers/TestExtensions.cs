@@ -1,11 +1,13 @@
-﻿using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.Threading.Tasks;
+using Allied.Core.Profiling;
 
-namespace StackExchange.Profiling.Tests
+namespace StackExchange.Profiling.Tests.Helpers
 {
     public static class TestExtensions
     {
         /// <summary>
-        /// Increments the currently running <see cref="MiniProfiler.Stopwatch"/> by <paramref name="milliseconds"/>.
+        /// Increments the currently running <see cref="Stopwatch"/> by <paramref name="milliseconds"/>.
         /// </summary>
         /// <param name="profiler">The profile to increment.</param>
         /// <param name="milliseconds">The milliseconds.</param>

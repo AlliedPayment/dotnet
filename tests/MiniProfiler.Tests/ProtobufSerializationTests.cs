@@ -1,4 +1,6 @@
 ﻿using System.IO;
+using Allied.Core.Profiling;
+using StackExchange.Profiling.Tests.Helpers;
 using Xunit.Abstractions;
 
 namespace StackExchange.Profiling.Tests

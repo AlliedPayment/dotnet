@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using StackExchange.Profiling.Helpers;
-using StackExchange.Profiling.Internal;
 using System.Runtime.Caching;
+using System.Threading.Tasks;
+using Allied.Core.Profiling.Helpers;
 
-namespace StackExchange.Profiling.Storage
+namespace Allied.Core.Profiling.Storage
 {
     /// <summary>
     /// A IMemoryCache-based provider for storing MiniProfiler instances (based on System.Runtime.Caching.MemoryCache)
@@ -187,7 +186,7 @@ namespace StackExchange.Profiling.Storage
         public Task SaveAsync(MiniProfiler profiler)
         {
             Save(profiler);
-            return Task.CompletedTask;
+            return new Task(() => { }); 
         }
 
         /// <summary>
@@ -217,7 +216,7 @@ namespace StackExchange.Profiling.Storage
         public Task SetUnviewedAsync(string user, Guid id)
         {
             SetUnviewed(user, id);
-            return Task.CompletedTask;
+            return new Task(() => { });
         }
 
         /// <summary>
@@ -242,7 +241,7 @@ namespace StackExchange.Profiling.Storage
         public Task SetViewedAsync(string user, Guid id)
         {
             SetViewed(user, id);
-            return Task.CompletedTask;
+            return new Task(() => { });
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using StackExchange.Profiling.Internal;
+﻿using Allied.Core.Profiling;
+using Allied.Core.Profiling.Internal;
+using StackExchange.Profiling.Internal;
+using StackExchange.Profiling.Tests.Helpers;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -8,7 +11,7 @@ namespace StackExchange.Profiling.Tests
     {
         public SerializationTests(ITestOutputHelper output) : base(output) { }
 
-        [Fact]
+        [Helpers.Fact]
         public void ParentMapping()
         {
             var mp = new MiniProfiler("Test", Options);

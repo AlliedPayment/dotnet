@@ -1,4 +1,4 @@
-﻿namespace StackExchange.Profiling
+﻿namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Pro

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Allied.Core.Profiling;
+using Allied.Core.Profiling.ProfileProviders;
+using StackExchange.Profiling.Tests.Helpers;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -16,7 +19,7 @@ namespace StackExchange.Profiling.Tests.Async
             Options.ProfilerProvider = new DefaultProfilerProvider();
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task SimpleAsync()
         {
             var profiler = Options.StartProfiler("root");
@@ -58,7 +61,7 @@ namespace StackExchange.Profiling.Tests.Async
             Output.WriteLine(profiler.RenderPlainText());
         }
 
-        [Fact]
+        [Helpers.Fact]
         public async Task Step_WithParallelTasks_SimulatedTime()
         {
             var profiler = Options.StartProfiler("root");

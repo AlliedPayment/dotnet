@@ -1,8 +1,9 @@
 ﻿using System.IO;
+using Allied.Core.Profiling;
 using ProtoBuf;
 using StackExchange.Redis;
 
-namespace StackExchange.Profiling.Storage.Internal
+namespace StackExchange.Profiling.Internal
 {
     /// <summary>
     /// Extension methods for <see cref="RedisStorage"/> and testing.

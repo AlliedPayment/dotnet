@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace StackExchange.Profiling
+namespace Allied.Core.Profiling
 {
     /// <summary>
     /// Information about a DbParameter used in the sql statement profiled by SqlTiming.
